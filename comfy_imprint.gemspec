@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
                   and it may work with other Rails apps, but is not tested against them.
                   Why not comfy_contact or something similar? Cause keeping track of ComfyContact::Contact.contact - hurts my head.'
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.licenses = ['MIT']
