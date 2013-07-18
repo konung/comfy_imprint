@@ -45,6 +45,7 @@ I don't like heroku, so there is no obligatory heroku demo, thou I might put up 
 
   # Config
   # copy & edit initializer
+  rake comfy_imprint:install:copy_initializer
 
 ```
 
