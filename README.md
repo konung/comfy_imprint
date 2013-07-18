@@ -21,13 +21,14 @@ I don't like heroku, so there is no obligatory heroku demo, thou I might put up 
 - Modify order in which fields are rendered. No need for overriding the view.
 - Uses minimal styling inside views, so entirely possible to style your contact form without touching gem at all with just a few rules in your application.css . If you use simple_form elsewhere it will just use your simple_form styling you already setup in your app.
 
-## Future Features
+## Upcoming Features
 #### Pull Requests are welcome!
 
 - Tests, Tests, Tests!
 - Admin interface tie-in. Right now you need to use either a GUI tool for your DB or do some kind of export on ComfyImprint::Contact.all from console or rake task if you want to look at your contact attempts outside of your email.
-- Often  Contact Us page has  address / phone information & google / yahoo / bing map. So adding those would be nice. A proper Imprint / Impressum / Masthead page like in German-speaking countries. Right now this can be done manually by overriding view but in the future I would like to add this functionality so my clients can updates their own phone numbers and such.
+- Often  Contact Us page has  address / phone information & google / yahoo / bing map. So adding those would be nice. A proper Imprint / Impressum / Masthead page like in German-speaking countries. Right now this can be done manually by overriding view but in the future I would like to add this functionality so my users can update their own phone numbers and such.
 - Integration with delayed_job for sending emails. Right now I do this manually by overriding controller.
+- Adding some kind of Captcha mechanism.
 
 ##Usage
 ```ruby
