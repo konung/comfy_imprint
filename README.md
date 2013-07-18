@@ -31,19 +31,19 @@ I don't like heroku, so there is no obligatory heroku demo, thou I might put up 
 
 ##Usage
 ```ruby
-    # Gemfile
-    gem 'comfy_imprint'
-    bundle install
-        
-    # Migrations
-    comfy_imprint:install:migrations
-    rake db:migrate
-        
-    # Routes
-    mount ComfyImprint::Engine, at: "/contact-us"
-      
-    # Config
-    # copy & edit initializer
+  # Gemfile
+  gem 'comfy_imprint'
+  bundle install
+
+  # Migrations
+  comfy_imprint:install:migrations
+  rake db:migrate
+
+  # Routes
+  mount ComfyImprint::Engine, at: "/contact-us"
+
+  # Config
+  # copy & edit initializer
 
 ```
 
