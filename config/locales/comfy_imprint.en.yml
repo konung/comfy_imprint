@@ -7,7 +7,7 @@ en:
         sent_by_name: "Sent by %{name} from %{email}"
         subject: "Contact Us message from %{email}"
     contacts:
-      show:
+      thank_you:
         notices:
           error: 'You must enter both fields.'
           success: 'Contact email was successfully sent. Thank you for your inquiry, we will try to get back to you ASAP.'
