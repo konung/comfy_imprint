@@ -30,19 +30,22 @@ I don't like heroku, so there is no obligatory heroku demo, thou I might put up 
 - Integration with delayed_job for sending emails. Right now I do this manually by overriding controller.
 
 ##Usage
+```ruby
+    # Gemfile
+    gem 'comfy_imprint'
+    bundle install
+        
+    # Migrations
+    comfy_imprint:install:migrations
+    rake db:migrate
+        
+    # Routes
+    mount ComfyImprint::Engine, at: "/contact-us"
+      
+    # Config
+    # copy & edit initializer
 
-        # Gemfile
-        gem 'comfy_imprint'
-        bundle install
-        # Migrations
-        comfy_imprint:install:migrations
-        rake db:migrate
-        # Routes
-          mount ComfyImprint::Engine, at: "/contact-us"
-        # Config
-        # copy & edit initializer
-
-
+```
 
 ## Name
 Why didn't I name this ComfyContact or something similar? Because dealing with ComfyContact::Contact.contact is confusing and because I already have unrelated resource named Contact. While this gem is properly namespaced, it would be confusing for anyone else not familiar with your app. I'm guessing I'm not the only genius to have unrelated model called Contact in my app.
