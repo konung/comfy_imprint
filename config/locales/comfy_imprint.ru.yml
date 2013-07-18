@@ -1,0 +1,55 @@
+ru:
+  comfy_imprint:
+    contact_us: 'Прямая связь'
+    contact_mailer:
+      contact_email:
+        sent_by_contact_form: "Отправлено через контактную форму от %{email}"
+        sent_by_name: "Отправлено %{name} с %{email}"
+        subject: "Контактное сообщение с %{email}"
+    contacts:
+      show:
+        notices:
+          error: 'Вы должны заполнить все поля.'
+          success: 'Сообщение отправлено. Мы постараемся связаться с Вами как можно скорее.'
+  activerecord:
+    attributes:
+      contact: &contact
+        name: 'Полное Имя'
+        email: 'Е-мэйл'
+        message: 'Сообщение'
+        phone: 'Телефон'
+        url: 'Вебсайт'
+        company: 'Название Компании'
+        is_subscribed: 'Подписаться на рассылку'
+    errors:
+      models:
+        comfy_imprint/contact:
+          attributes:
+            name:
+              invalid_name: "разрешены только корректные знаки: Leia Vader-O'Solo II . Без пунктуации, пожалуйста!"
+            email:
+              invalid_email: 'разрешены только корректные е-мэйлы: leia.vader_o_solo@death-star.space'
+            phone:
+              invalid_phone: 'разрешены только корректные номера: (012) 345-6789 x 555'
+            url:
+              invalid_url: 'разрешены только корректные аддресса: www.death-star.space'
+            company:
+              invalid_company_name: 'разрешены только корректные названия компаний: Death Star Candy Company, Inc.'
+            message:
+              invalid_clean_text: 'разрешены только корректные знаки: ограничьтесь буквами, цифрами и знаками препинания ()-?!,. пожалуйста.'
+  simple_form:
+    labels:
+      contact:
+        <<: *contact
+    placeholders:
+      contact:
+        name: 'Майор Пронин'
+        email: 'major_pronin@fsb.spy'
+        phone: '(007) 007-9999 x 007'
+        url: 'www.fsb.spy'
+        company: 'ФСБ'
+        message:
+  helpers:
+    submit:
+      contact:
+        create: 'Отправить Сообщение'

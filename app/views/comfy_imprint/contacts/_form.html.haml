@@ -1,0 +1,13 @@
+= simple_form_for(@contact) do |f|
+  - if @contact.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@contact.errors.count, "error")
+        prohibited this contact from being saved:
+      %ul
+        - @contact.errors.full_messages.each do |msg|
+          %li= msg
+  - ComfyImprint.configuration.attributes_to_display.each do |field|
+    = f.input field
+
+  = f.button :submit, class: 'button small'

@@ -1,0 +1,55 @@
+en:
+  comfy_imprint:
+    contact_us: 'Contact Us'
+    contact_mailer:
+      contact_email:
+        sent_by_contact_form: "Sent through contact form from %{email}"
+        sent_by_name: "Sent by %{name} from %{email}"
+        subject: "Contact Us message from %{email}"
+    contacts:
+      show:
+        notices:
+          error: 'You must enter both fields.'
+          success: 'Contact email was successfully sent. Thank you for your inquiry, we will try to get back to you ASAP.'
+  activerecord:
+    attributes:
+      contact: &contact
+        name: 'Full Name'
+        email: 'Email'
+        message: 'Message'
+        phone: 'Phone'
+        url: 'Website'
+        company: 'Company Name'
+        is_subscribed: 'Subscribe to Newsletter'
+    errors:
+      models:
+        comfy_imprint/contact:
+          attributes:
+            name:
+              invalid_name: "allows only valid names: Leia Vader-O'Solo II . No punctuation please."
+            email:
+              invalid_email: 'allows only valid emails: leia.vader_o_solo@death-star.space'
+            phone:
+              invalid_phone: 'allows only valid phones: (012) 345-6789 x 555'
+            url:
+              invalid_url: 'allows only valid urls: www.death-star.space'
+            company:
+              invalid_company_name: 'allows only valid company names: Death Star Candy Company, Inc.'
+            message:
+              invalid_clean_text: 'allows only valid characters: limit it to letters, numbers and punctuation ()-?!,. please.'
+  simple_form:
+    labels:
+      contact:
+        <<: *contact
+    placeholders:
+      contact:
+        name: 'James Bond'
+        email: 'james_bond@mi6.spy'
+        phone: '(007) 007-9999 x 007'
+        url: 'www.mi6.spy'
+        company: 'MI 6'
+        message:
+  helpers:
+    submit:
+      contact:
+        create: 'Send Email'

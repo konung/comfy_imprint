@@ -1,0 +1,2 @@
+class ComfyImprint::ApplicationController < ApplicationController
+end

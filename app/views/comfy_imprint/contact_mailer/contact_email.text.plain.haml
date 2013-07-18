@@ -1,0 +1,4 @@
+-# Some basic plain text formatting is in order.
+- @contact.attributes.each do |key,val|
+  = "#{' ' * (20 - key.length)}#{key.titleize} : #{val}"
+  = "#{'-' * 100}\n"
