@@ -6,7 +6,7 @@ I don't like heroku, so there is no obligatory heroku demo, thou I might put up 
 
 ##Features / Bugs
 
-- Uses your DB as a storage (creates comfy_imprint_contacts table) for all contact attempts on your website. Really convenient if you want to find that one person who emailed you from your website about buying it for $1000000 and you accidentally deleted that email. Also can be used to send notifications to your users. (There is an opt-in / opt-out Boolean field to let users sign up for your SPAM.)
+- Uses your DB as a storage (creates comfy_imprint_contacts table) for all contact attempts on your website. Really convenient if you want to find that one person who emailed you from your website about buying it for $1000000 and you accidentally deleted that email. Also can be used to send notifications to your users. (There is an opt-in / opt-out Boolean field to let users sign up for your SPAM.) Major plus of this approach is that email is not 100% reliable: it can get lost, servers go down, mailboxes get filled, and SPAM filters go crazy. This takes care of it by saving at least something in your DB.
 - Several default fields that should be sufficient in 90% of use cases. Remember this should be an **EASY** contact-us form, not a credit application.
 - Built in validations / error checking for all fields ( phone, email, name, body, url, company name, is_subscribed). Has default error messages.
 - Default Placeholders (May the force be with you!).
