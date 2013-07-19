@@ -24,6 +24,8 @@ I don't like heroku, so there is no obligatory heroku demo, thou I might put up 
 ## Upcoming Features
 #### Pull Requests are welcome!
 
+See current lest at : https://github.com/konung/comfy_imprint/issues?labels=enhancement&page=1&state=open
+
 - Tests, Tests, Tests!
 - Admin interface tie-in. Right now you need to use either a GUI tool for your DB or do some kind of export on ComfyImprint::Contact.all from console or rake task if you want to look at your contact attempts outside of your email.
 - Often  Contact Us page has  address / phone information & google / yahoo / bing map. So adding those would be nice. A proper Imprint / Impressum / Masthead page like in German-speaking countries. Right now this can be done manually by overriding view but in the future I would like to add this functionality so my users can update their own phone numbers and such.
