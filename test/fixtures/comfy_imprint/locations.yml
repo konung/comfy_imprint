@@ -4,8 +4,35 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-#  column: value
+one:
+  name: "HQ"
+  address_line_1: "300 Example Street"
+  address_line_2: "Room 15"
+  address_line_3:
+  city: "Chicago"
+  state: "IL"
+  zip: "60625"
+  country: "United States"
+  attn: "Mr. Bond"
+  phone_main: "1 (800) 555-1632"
+  phone_additional: nil
+  fax: "1 (866) 555-3321"
+  email: "hq@example.com"
+  map_link:  "https://maps.google.com/maps?q=hancock+building+chicago&hl=en&hnear=John+Hancock+Center+Chicago+Illinois+60611&t=m&z=16&iwloc=A"
+  picture_link: "http://www.bc.edu/bc_org/avp/cas/fnart/fa267/SOM/chicago1.jpg"
+  note: "Our beautiful HQ is located on top of Hancock Building"
+two:
+  name: "Paris Branch"
+  address_line_1: "5 Avenue Anatole France"
+  address_line_2: "Room 15"
+  address_line_3: "Cubicle 5"
+  city: "Paris"
+  zip: "75007"
+  country: "France"
+  attn: "Mr. Bond"
+  phone_main: "+33 892 70 12 39"
+  phone_additional: nil
+  fax: " "
+  email: "paris@example.com"
+  map_link: "https://maps.google.com/maps?q=eiffel+tower&ie=UTF8&hl=en&hq=eiffel+tower&t=m&z=14&iwloc=A&cid=10222232094831998944&ll=48.858278,2.294254&output=embed"
+

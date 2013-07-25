@@ -4,8 +4,20 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-#  column: value
+one:
+  name: "James Bond"
+  email: 'james_bond@mi6.spy'
+  phone: '(012) 345-6789 x 555'
+  url: 'www.mi6.spy'
+  company: 'MI6'
+  is_subscribed: true
+  message: 'Dear Queen. Jimmy'
+# This fixture should fail
+two:
+  name: "James Bond!"
+  email: 'james_<bond@mi6.spy'
+  phone: '(012) 345-678A x 555'
+  url: 'www.mi6.spy.!'
+  company: 'MI6<>'
+  is_subscribed: nil
+  message: 'Dear Queen. Jimmy <div>'
