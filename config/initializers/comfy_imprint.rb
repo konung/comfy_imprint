@@ -1,5 +1,12 @@
 ComfyImprint.configure do |config|
 
+    # There 2 ways to customize your contact-us page. One is to override views & partials
+    # in app/views/comfy_imprint . Refer to source code or github page for which views to verride
+    # Another option, if you just want to hide some sections on the contact-us page  you can do it in
+    # this config option. A good example is - you don't want your 800 number on the contact page
+    # if you are going to display it the header already. Right?
+    config.sections_to_display = [:form, :social_badges, :number_800, :location_list]
+
     # Remove attributes you don't want displayed. If you add new attributes, specify them here as well.
     # Order is important, young grasshopper! This is the order they will be rendered in in the view.
     # Keep in mind that :is_subscribed is a general purpose boolean. It's up to you what meaning you attach to it.
@@ -25,7 +32,7 @@ ComfyImprint.configure do |config|
     # just configure it here, and then call it  like so ComfyImprint.configuration.phone . Or just leave it blank.
     # Technically you don't need ComfyImprint for this but you might as well so that you don't polute your template code with
     # links that can change. Much easier to control this data from here.
-    config.phone = 'Call us at 1 (800) 555-1234'
+    config.number_800 = 'Call us at 1 (800) 555-1'
 
     # Config social contact methods:
     # You can add your own, just add a link to profile / page & link to log. Can be relative - ie in your assets.
