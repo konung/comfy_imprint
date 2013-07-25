@@ -14,12 +14,15 @@ I don't like heroku, so there is no obligatory heroku demo, thou I might put up 
 - I18n ready. Right now has English & Russian locales. More  translations are welcome.
 - Fields are configurable to be displayed / not displayed and required / not required.
 - Uses your Rails apps mail configuration. But you can configure who should receive notifications from contact form.
-- Right now it's not coupled to tightly with CMS so you might be able to use it outside of it as well. At least I don't see any reason why it wouldn't work.
+- Right now it's not coupled too tightly with CMS, so you might be able to use it outside of it as well. At least I don't see any reason why it wouldn't work.
 - Uses HAML & SimpleForm, but it can be easily overridden in your views if you want to.
 - I use it with Rails 3 and CMS 1.8 , however it should be usable with Rails 4 and CMS 1.9 . I will shortly start a new project that should confirm this.
 - Uses new hash syntax, so it's Ruby > 1.9 only.
 - Modify order in which fields are rendered. No need for overriding the view.
 - Uses minimal styling inside views, so entirely possible to style your contact form without touching gem at all with just a few rules in your application.css . If you use simple_form elsewhere it will just use your simple_form styling you already setup in your app.
+- Often  Contact Us page has  address / phone information & google / yahoo / bing map. A proper Imprint / Impressum / Masthead page like in German-speaking countries. This is implemented as Location model ( to hold multiple branches if availalbe). You can just use a partial if you need to place it somewhere else on your site, or you can just override the view.
+- Social Contacts & special contacts that you want to display through out your website can be configures in initializer ( think links to Facebook and 1-800 number)
+- Contact categories are not implemented and are not likely to be implemented. (A drop down option to contact different departments.) It's an antifeature! Based on experience, customers often don't know which department they need. It creates an extra step for them to complete. Emails get routed to the wrong person / department and entropy is increased. It's much better to either route to a responsble person who will redirect email based on request OR send it to a group email like info@example.com where a group of people can see it. Also in one case all emails were routed to support@example.com which was pickup email for Redmine, which automatically create a support ticket.
 
 ## Upcoming Features
 #### Pull Requests are welcome!
@@ -28,7 +31,6 @@ See current lest at : https://github.com/konung/comfy_imprint/issues?labels=enha
 
 - Tests, Tests, Tests!
 - Admin interface tie-in. Right now you need to use either a GUI tool for your DB or do some kind of export on ComfyImprint::Contact.all from console or rake task if you want to look at your contact attempts outside of your email.
-- Often  Contact Us page has  address / phone information & google / yahoo / bing map. So adding those would be nice. A proper Imprint / Impressum / Masthead page like in German-speaking countries. Right now this can be done manually by overriding view but in the future I would like to add this functionality so my users can update their own phone numbers and such.
 - Integration with delayed_job for sending emails. Right now I do this manually by overriding controller.
 - Adding some kind of Captcha mechanism.
 

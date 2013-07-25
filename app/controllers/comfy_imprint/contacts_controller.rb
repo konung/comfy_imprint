@@ -3,6 +3,7 @@ require_dependency "comfy_imprint/application_controller"
 module ComfyImprint
   class ContactsController < ApplicationController
     before_filter :set_contact, only: [:show, :destroy]
+    before_filter :find_locations
 
     def index
       redirect_to root_path
@@ -39,6 +40,10 @@ module ComfyImprint
       # Use callbacks to share common setup or constraints between actions.
       def set_contact
         @contact = Contact.find(params[:id])
+      end
+
+      def find_locations
+        @locations = Location.all
       end
 
       # Only allow a trusted parameter "white list" through.

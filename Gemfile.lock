@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    comfy_imprint (0.0.1)
+    comfy_imprint (0.0.3)
       haml (~> 4.0.3)
       kaminari (~> 0.14.1)
       rails (~> 3.2.13)

@@ -12,15 +12,19 @@ module ComfyImprint
                   :contacts_per_page,
                   :mail_from,
                   :mail_to,
-                  :mail_subject
+                  :mail_subject,
+                  :social_badges,
+                  :phone
 
     def initialize #:nodoc:
       @attributes_to_display = []
       @attributes_to_require = []
       @contacts_per_page     = 1
-      @mail_from    = ''
-      @mail_to      = ''
-      @mail_subject = ''
+      @mail_from             = ''
+      @mail_to               = ''
+      @mail_subject          = ''
+      @social_badges         = {}
+      @phone                 = ''
     end
   end
 end

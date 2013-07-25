@@ -1,0 +1,7 @@
+-# Use this partial to layout your list of locations if you have a bunch.
+-# It's not ideal to make a call to locations here and not in controller, but often times location list goes on a separte page or even in a footer or something:
+-# Outside the scope of ComfyImprint. In that case you need to make a call to ComfyImprint::Location.all and pass it to partials.
+- unless @locations.blank?
+  %h2 Locations
+  - @locations.each do |location|
+    = render 'location', location: location

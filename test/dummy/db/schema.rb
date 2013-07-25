@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130718151203) do
+ActiveRecord::Schema.define(:version => 20130725201929) do
 
   create_table "comfy_imprint_contacts", :force => true do |t|
     t.string   "name"
@@ -26,5 +26,27 @@ ActiveRecord::Schema.define(:version => 20130718151203) do
   end
 
   add_index "comfy_imprint_contacts", ["email"], :name => "index_comfy_imprint_contacts_on_email"
+
+  create_table "comfy_imprint_locations", :force => true do |t|
+    t.string   "name"
+    t.string   "address_line_1"
+    t.string   "address_line_2"
+    t.string   "address_line_3"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.string   "country"
+    t.string   "attn"
+    t.string   "phone_main"
+    t.string   "phone_additional"
+    t.string   "fax"
+    t.string   "email"
+    t.string   "url"
+    t.string   "map_link"
+    t.string   "picture_link"
+    t.text     "note"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
 
 end

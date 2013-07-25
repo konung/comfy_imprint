@@ -1,0 +1,30 @@
+%h3= location.name unless location.name.blank?
+#comfy-imprint-location
+  #snail-mail
+    #address-lines
+      = location.address_line_1 unless location.address_line_1.blank?
+      = location.address_line_2 unless location.address_line_2.blank?
+      = location.address_line_3 unless location.address_line_3.blank?
+    #city-state-zip
+      = location.city unless location.city.blank?
+      = location.state unless location.state.blank?
+      = location.zip unless location.zip.blank?
+    #country
+      = location.country unless location.country.blank?
+    #attn
+      = location.attn unless location.attn.blank?
+  #note
+    = location.note unless location.note.blank?
+  #electronic-communications
+    #phone-main
+      = location.phone_main unless location.phone_main.blank?
+    #phone-additional
+      = location.phone_additional unless location.phone_additional.blank?
+    #fax
+      = location.fax unless location.fax.blank?
+  #picture
+    - unless location.picture_link.blank?
+      %img{src: location.picture_link}
+  #map
+    - unless location.map_link.blank?
+      %iframe{frameborder: '0', height: '400', marginheight: '0', marginwidth: '0', scrolling: 'no', width: '500', src: location.map_link }
