@@ -1,5 +1,5 @@
 - @contact.attributes.each do |key,val|
-  - if ComfyImprint.configuration.attributes_to_display.include?(key.to_sym)
+  - if ComfyImprint.attributes_to_display.include?(key.to_sym)
     .row
       %span.label
         %strong

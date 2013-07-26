@@ -1,4 +1,4 @@
-ComfyImprint.configure do |config|
+ComfyImprint.setup do |config|
 
     # There 2 ways to customize your contact-us page. One is to override views & partials
     # in app/views/comfy_imprint . Refer to source code or github page for which views to verride
@@ -29,16 +29,16 @@ ComfyImprint.configure do |config|
     config.mail_subject = "Contact us form submission from #{Rails.application.class.parent_name}"
 
     # Some sites like to show their 1 800 number as a batch of honor everywhere, so for those folks
-    # just configure it here, and then call it  like so ComfyImprint.configuration.phone . Or just leave it blank.
+    # just configure it here, and then call it  like so ComfyImprint.phone . Or just leave it blank.
     # Technically you don't need ComfyImprint for this but you might as well so that you don't polute your template code with
     # links that can change. Much easier to control this data from here.
-    config.number_800 = 'Call us at 1 (800) 555-1'
+    config.number_800 = 'Call us at 1 (800) 555-1224'
 
     # Config social contact methods:
     # You can add your own, just add a link to profile / page & link to log. Can be relative - ie in your assets.
     # I don't think I can distribute their logos as assets, legally speaking.
     # Comment out or delete the ones you don't want to use.
-    # To call them in your HAML or ERB template just do this ComfyImprint.configuration.social_badges[:github][:profile] #=> Will return link to your github profile
+    # To call them in your HAML or ERB template just do this ComfyImprint.social_badges[:github][:profile] #=> Will return link to your github profile
     config.social_badges = {
         stackoverflow:  {profile: 'http://stackoverflow.com/users/CHANGE/ME',
                             logo: ''}, # http://stackexchange.com/about/logos

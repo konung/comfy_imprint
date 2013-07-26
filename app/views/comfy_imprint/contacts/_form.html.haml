@@ -7,7 +7,7 @@
       %ul
         - @contact.errors.full_messages.each do |msg|
           %li= msg
-  - ComfyImprint.configuration.attributes_to_display.each do |field|
+  - ComfyImprint.attributes_to_display.each do |field|
     = f.input field
 
   = f.button :submit, class: 'button small'

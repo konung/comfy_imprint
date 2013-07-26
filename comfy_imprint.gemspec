@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.licenses = ['MIT']
-  s.add_dependency 'rails', '~> 3.2.13'
+  s.add_dependency 'rails', '~> 3.2.14'
   s.add_dependency 'haml', '~> 4.0.3'
   s.add_dependency 'simple_form', '~> 2.1.0'
   s.add_dependency 'kaminari', '~> 0.14.1'

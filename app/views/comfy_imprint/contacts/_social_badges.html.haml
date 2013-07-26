@@ -1,6 +1,6 @@
 #social_badges
-  - unless ComfyImprint.configuration.social_badges.blank?
-    - ComfyImprint.configuration.social_badges.each_pair do |badge, details|
+  - unless ComfyImprint.social_badges.blank?
+    - ComfyImprint.social_badges.each_pair do |badge, details|
       %div{id: "#{badge.to_s}_badge", class: 'social_badge'}
         = link_to details[:profile] do
           %img{src: "#{details[:logo]}"}
