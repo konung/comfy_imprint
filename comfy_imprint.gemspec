@@ -16,10 +16,10 @@ Gem::Specification.new do |s|
                   and it may work with other Rails apps, but is not tested against them.
                   Why not comfy_contact or something similar? Cause keeping track of ComfyContact::Contact.contact - hurts my head.'
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["Gemfile","LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
-
   s.licenses = ['MIT']
+  s.require_paths = ["lib"]
   s.add_dependency 'rails', '~> 3.2.14'
   s.add_dependency 'haml', '~> 4.0.3'
   s.add_dependency 'simple_form', '~> 2.1.0'
