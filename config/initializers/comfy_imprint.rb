@@ -1,4 +1,4 @@
-ComfyImprint.setup do |config|
+ComfyImprint.configure do |config|
 
     # There 2 ways to customize your contact-us page. One is to override views & partials
     # in app/views/comfy_imprint . Refer to source code or github page for which views to verride

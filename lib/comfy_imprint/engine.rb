@@ -4,5 +4,7 @@ module ComfyImprint
     config.generators do |g|
       g.template_engine :haml
     end
+    initializer 'comfy_imprint.configuration' do |app|
+    end
   end
 end

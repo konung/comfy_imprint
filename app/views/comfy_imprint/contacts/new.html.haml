@@ -1,4 +1,4 @@
 %h2
   = t('comfy_imprint.contact_us')
-- ComfyImprint.sections_to_display.each do |section|
+- ComfyImprint.configuration.sections_to_display.each do |section|
   = render section.to_s # In the future this allows to add more sections to display, and control them from config.
