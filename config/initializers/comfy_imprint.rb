@@ -40,16 +40,16 @@ ComfyImprint.configure do |config|
     # Comment out or delete the ones you don't want to use.
     # To call them in your HAML or ERB template just do this ComfyImprint.configuration.social_badges[:github][:profile] #=> Will return link to your github profile
     config.social_badges = {
-        facebook:       {profile: 'https://www.facebook.com/CHANGEME',
-                            logo: ''}, # https://www.facebookbrand.com/
-        twitter:        {profile: 'https://twitter.com/CHANGEME',
-                            logo: ''}, # https://twitter.com/logo
         stackoverflow:  {profile: 'http://stackoverflow.com/users/CHANGE/ME',
                             logo: ''}, # http://stackexchange.com/about/logos
         linked_in:      {profile: 'http://www.linkedin.com/in/CHANGEME',
                             logo: ''}, # http://developer.linkedin.com/documents/branding-guidelines#general-use
         github:         {profile: 'https://github.com/CHANGEME',
                             logo: ''}, # https://github.com/logos
+        facebook:       {profile: 'https://www.facebook.com/CHANGEME',
+                            logo: ''}, # https://www.facebookbrand.com/
+        twitter:        {profile: 'https://twitter.com/CHANGEME',
+                            logo: ''}, # https://twitter.com/logo
         google_plus:    {profile: 'https://plus.google.com/CHANGEME',
                             logo: ''}, # https://developers.google.com/+/branding-guidelines
         tent_is:        {profile: 'https://CHANGEME.tent.is',
