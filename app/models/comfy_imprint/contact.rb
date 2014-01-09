@@ -1,7 +1,5 @@
 module ComfyImprint
   class Contact < ActiveRecord::Base
-    attr_accessible :name, :email, :phone, :url, :company, :is_subscribed, :message
-
     # You need to explictely set allow_blank: true on these validations, otherwise you'll run into a problem of blank values being invalid or too_short
     # See comfy_imprint/app/validators for custom validators used here
 

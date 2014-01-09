@@ -19,7 +19,7 @@ module ComfyImprint
       @contact = Contact.new(contact_params)
       if @contact.save
         # Contact Attempt passed validation so it's safe to mail it.
-        # In the future I may want to impleme nt some kind of delayed_job or redis hook here
+        # In the future I may want to implement some kind of delayed_job or redis hook here
         ContactMailer.contact_email(@contact).deliver
         redirect_to :thank_you #, notice: 'Contact was successfully created.'
       else
@@ -48,7 +48,8 @@ module ComfyImprint
 
       # Only allow a trusted parameter "white list" through.
       def contact_params
-        params[:contact]
+        params.require(:contact).permit(:name, :email, :phone, 
+        :url, :company, :is_subscribed, :message)
       end
   end
 end

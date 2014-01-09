@@ -43,11 +43,11 @@ en:
         <<: *contact
     placeholders:
       contact:
-        name: 'James Bond'
-        email: 'james_bond@mi6.spy'
-        phone: '(007) 007-9999 x 007'
-        url: 'www.mi6.spy'
-        company: 'MI 6'
+        name: ''
+        email: ''
+        phone: ''
+        url: ''
+        company: ''
         message:
   helpers:
     submit:
