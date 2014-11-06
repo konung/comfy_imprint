@@ -20,10 +20,11 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
   s.licenses = ['MIT']
   s.require_paths = ["lib"]
-  s.add_dependency 'rails', '~> 3.2.14'
-  s.add_dependency 'haml', '~> 4.0.3'
-  s.add_dependency 'simple_form', '~> 2.1.0'
-  s.add_dependency 'kaminari', '~> 0.14.1'
+  s.add_dependency 'rails', '~> 4.0'
+  s.add_dependency 'haml', '~> 4.0'
+  s.add_dependency 'simple_form', '~> 3.0'
+  s.add_dependency 'kaminari', '~> 0.15'
+  s.add_dependency 'protected_attributes'
 
   # s.add_dependency "jquery-rails"
 

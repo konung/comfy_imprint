@@ -41,7 +41,7 @@ See current lest at : https://github.com/konung/comfy_imprint/issues?labels=enha
   bundle install
 
   # Migrations
-  comfy_imprint:install:migrations
+  rake comfy_imprint:install:migrations
   rake db:migrate
 
   # Routes
