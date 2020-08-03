@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.licenses = ['MIT']
   s.require_paths = ["lib"]
   s.add_dependency 'rails', '~> 4.0'
-  s.add_dependency 'haml', '~> 4.0'
+  s.add_dependency 'haml', '>= 4', '< 6'
   s.add_dependency 'simple_form', '~> 3.0'
   s.add_dependency 'kaminari', '~> 0.15'
   s.add_dependency 'protected_attributes'
